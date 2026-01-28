@@ -1,16 +1,16 @@
 
 import React, { useState } from 'react';
-import { TaskStatus, Task, ViewMode, Offer } from './types';
-import Header from './components/Header';
-import Home from './screens/Home';
-import Login from './screens/Login';
-import CreateTask from './screens/CreateTask';
-import TaskDetail from './screens/TaskDetail';
-import Profile from './screens/Profile';
-import WalletManagement from './screens/WalletManagement';
-import OfferSubmission from './screens/OfferSubmission';
-import InProgress from './screens/InProgress';
-import CompletionRating from './screens/CompletionRating';
+import { TaskStatus, Task, ViewMode, Offer } from './types.ts';
+import Header from './components/Header.tsx';
+import Home from './screens/Home.tsx';
+import Login from './screens/Login.tsx';
+import CreateTask from './screens/CreateTask.tsx';
+import TaskDetail from './screens/TaskDetail.tsx';
+import Profile from './screens/Profile.tsx';
+import WalletManagement from './screens/WalletManagement.tsx';
+import OfferSubmission from './screens/OfferSubmission.tsx';
+import InProgress from './screens/InProgress.tsx';
+import CompletionRating from './screens/CompletionRating.tsx';
 
 type Screen = 'HOME' | 'LOGIN' | 'CREATE_TASK' | 'TASK_DETAIL' | 'PROFILE' | 'WALLET' | 'OFFER_SUBMIT' | 'IN_PROGRESS' | 'RATING';
 
@@ -112,7 +112,7 @@ const App: React.FC = () => {
           />
         ) : null;
       default:
-        return <Home tasks={tasks} viewMode={viewMode} onSwitchMode={setViewMode} onTaskClick={()=>{}} onCreateClick={()=>{}} onWalletClick={()=>{}} />;
+        return <div className="p-10 text-center">Screen not found</div>;
     }
   };
 
