@@ -1,0 +1,23 @@
+
+{
+  "name": "Sửa Nhanh",
+  "short_name": "Sửa Nhanh",
+  "description": "Nền tảng kết nối sửa chữa láng giềng tin cậy.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/10439/10439775.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ]
+}
